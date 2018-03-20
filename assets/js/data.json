@@ -1,26 +1,195 @@
 {
 	"question": [{
-		"title": "五年来，我国经济实力跃上新台阶。国内生产总值从54万亿元增加到82.7万亿元，年均增长＿＿。",
+		"title": "2018年全国两会是指＿＿和全国政协十三届第一次会议。",
 		"index": "1",
 		"img": "",
 		"score": 1,
 		"answer": [{
-			"content": "6.9%",
-			"isRight": false
-		}, {
-			"content": "7.1%",
+			"content": "十三届全国人大一次会议",
 			"isRight": true
+		}, {
+			"content": "十二届全国人大一次会议",
+			"isRight": false
 		}],
 		"id": "8ySKDGKd",
 		"isMultiselect": false
 	}, {
 		"img": "",
-		"title": "五年来，创新驱动发展成果丰硕。高铁网络、电子商务、＿＿、共享经济等引领世界潮流。",
+		"title": "3月4日，习近平在看望参加政协会议的民盟致公党无党派人士侨联界委员时强调，中国共产党领导的多党合作和政治协商制度，既强调中国共产党的领导，也强调＿＿。",
+		"index": "2",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "社会主义政治",
+			"isRight": false
+		}, {
+			"content": "发扬社会主义民主",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "3月4日，习近平在看望参加政协会议的民盟致公党无党派人士侨联界委员时强调，坚持中国共产党的领导，不是不要＿＿了，而是要形成更广泛、更有效的＿＿。",
 		"index": "3",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "大飞机 ",
+			"content": "民主 民主",
+			"isRight": true
+		}, {
+			"content": "法治 法治",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "３月５日，习近平在参加内蒙古代表团审议时强调，内蒙古产业发展不能只盯着羊、煤、土、气，要大力培育新产业、新动能、＿＿。",
+		"index": "4",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "新业态",
+			"isRight": false
+		}, {
+			"content": "新增长极",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "３月５日，习近平在参加内蒙古代表团审议时强调，群众对一些地方脱贫攻坚工作中的形式主义、＿＿、弄虚作假现象非常反感，要认真加以解决。 ",
+		"index": "5",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "官僚主义",
+			"isRight": true
+		}, {
+			"content": "享乐主义",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "３月8日，习近平在山东代表团参加审议时强调，＿＿并不是消极、怠政、不作为，而是要牢固树立正确政绩观。",
+		"index": "6",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "功成不必在我",
+			"isRight": true
+		}, {
+			"content": "万物皆备于我",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "３月8日，习近平在山东代表团参加审议时强调，要推动乡村人才振兴，把＿＿放在首要位置。",
+		"index": "7",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人才创新驱动",
+			"isRight": false
+		}, {
+			"content": "人力资本开发",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "３月７日，习近平在参加广东代表团审议时强调，＿＿是第一要务，＿＿是第一资源，＿＿是第一动力。",
+		"index": "8",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "发展 人才 创新",
+			"isRight": true
+		}, {
+			"content": "创新 人才 改革",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "３月７日，习近平在参加广东代表团审议时强调，共产党就是为人民＿＿的，人民群众什么方面感觉不幸福、不快乐、不满意，我们就在哪方面下功夫，千方百计为群众排忧解难。",
+		"index": "9",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "谋划未来",
+			"isRight": false
+		}, {
+			"content": "谋幸福",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "3月10日，习近平在重庆代表团参加审议时强调，＿＿是整个社会道德建设的风向标。",
+		"index": "10",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "政德 ",
+			"isRight": true
+		}, {
+			"content": "公德 ",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "3月10日，习近平在重庆代表团参加审议时强调，要＿＿。小事小节是一面镜子，小事小节中有党性、有原则、有人格。",
+		"index": "11",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "勿以善小而不为",
+			"isRight": false
+		}, {
+			"content": "多积尺寸之功",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "3月12日，习近平在出席解放军和武警部队代表团全体会议时强调，扎扎实实推进＿＿，为实现中国梦强军梦提供强大动力和战略支撑。",
+		"index": "12",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "军民融合深度发展",
+			"isRight": true
+		}, {
+			"content": "军民一家亲",
+			"isRight": false
+		}]
+	}, {
+		"img": "",
+		"title": "3月12日，习近平在出席解放军和武警部队代表团全体会议时指出，国防和军队建设是全党全军全国各族人民的＿＿。",
+		"index": "13",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "首要任务",
+			"isRight": false
+		}, {
+			"content": "共同事业",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "五年来，我国经济实力跃上新台阶。国内生产总值从54万亿元增加到82.7万亿元，年均增长＿＿。",
+		"index": "14",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "6.9% ",
+			"isRight": false
+		}, {
+			"content": "7.1%",
+			"isRight": true
+		}]
+	}, {
+		"img": "",
+		"title": "五年来，创新驱动发展成果丰硕。高铁网络、电子商务、＿＿、共享经济等引领世界潮流。",
+		"index": "15",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "大飞机",
 			"isRight": false
 		}, {
 			"content": "移动支付",
@@ -29,7 +198,7 @@
 	}, {
 		"img": "",
 		"title": "五年来，人民生活持续改善。脱贫攻坚取得决定性进展，贫困人口减少＿＿多万，易地扶贫搬迁830万人，贫困发生率由10.2%下降到3.1%。",
-		"index": "4",
+		"index": "16",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -42,20 +211,20 @@
 	}, {
 		"img": "",
 		"title": "五年来，居民收入年均增长7.4%、＿＿经济增速，形成世界上人口最多的中等收入群体。",
-		"index": "5",
+		"index": "17",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
 			"content": "超过",
 			"isRight": true
 		}, {
-			"content": "追平 ",
+			"content": "追平",
 			"isRight": false
 		}]
 	}, {
 		"img": "",
 		"title": "经过艰辛努力，我们顶住了经济下行压力、避免了“硬着陆”，保持了经济＿＿增长，促进了结构优化，经济长期向好的基本面不断巩固和发展。",
-		"index": "6",
+		"index": "18",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -68,11 +237,11 @@
 	}, {
 		"img": "",
 		"title": "五年来，高速铁路运营里程从9000多公里增加到2万5千公里、占世界＿＿。",
-		"index": "8",
+		"index": "19",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "三分之一",
+			"content": "三分之一 ",
 			"isRight": false
 		}, {
 			"content": "三分之二",
@@ -81,7 +250,7 @@
 	}, {
 		"img": "",
 		"title": "五年来，倡导和推动共建“一带一路”，发起创办＿＿，设立丝路基金，一批重大互联互通、经贸合作项目落地。",
-		"index": "10",
+		"index": "20",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -94,11 +263,11 @@
 	}, {
 		"img": "",
 		"title": "我们清醒认识到，我国仍处于并将长期处于社会主义初级阶段，仍是世界最大发展中国家，发展＿＿的一些突出问题尚未解决。",
-		"index": "13",
+		"index": "21",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "不平衡不充分 ",
+			"content": "不平衡不充分",
 			"isRight": true
 		}, {
 			"content": "落后",
@@ -107,46 +276,46 @@
 	}, {
 		"img": "",
 		"title": "做好今年工作，要认真贯彻习近平新时代中国特色社会主义经济思想，坚持＿＿工作总基调，把＿＿作为一个整体来把握。",
-		"index": "15",
+		"index": "22",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
 			"content": "又好又快  好和快",
 			"isRight": false
 		}, {
-			"content": "稳中求进   稳和进  ",
+			"content": "稳中求进  稳和进",
 			"isRight": true
 		}]
 	}, {
 		"img": "",
 		"title": "今年的政府工作报告提出，2018年发展主要预期目标：国内生产总值增长＿＿左右。",
-		"index": "16",
+		"index": "23",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
 			"content": "6.5%",
 			"isRight": true
 		}, {
-			"content": "7%",
+			"content": "7% ",
 			"isRight": false
 		}]
 	}, {
 		"img": "",
-		"title": "今年，城镇新增就业1100万人以上，__5.5%以内。",
-		"index": "17",
+		"title": "今年，城镇新增就业1100万人以上，＿＿5.5%以内。",
+		"index": "24",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "城镇登记失业率 ",
+			"content": "城镇登记失业率",
 			"isRight": false
 		}, {
-			"content": "城镇调查失业率 ",
+			"content": "城镇调查失业率",
 			"isRight": true
 		}]
 	}, {
 		"img": "",
 		"title": "坚持把发展经济着力点放在＿＿经济上，继续抓好“三去一降一补”，大力简政减税减费，不断优化营商环境，进一步激发市场主体活力，提升经济发展质量。",
-		"index": "20",
+		"index": "25",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -159,7 +328,7 @@
 	}, {
 		"img": "",
 		"title": "今年的政府工作报告提出，明显降低家庭宽带、企业宽带和专线使用费，取消＿＿，移动网络流量资费年内至少降低30%。",
-		"index": "21",
+		"index": "26",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -172,7 +341,7 @@
 	}, {
 		"img": "",
 		"title": "工程建设项目审批时间再压减一半。深入推进“互联网+政务服务”，使更多事项在网上办理，必须到现场办的也要力争做到“只进一扇门”、“＿＿”。",
-		"index": "24",
+		"index": "27",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -185,7 +354,7 @@
 	}, {
 		"img": "",
 		"title": "国家科技投入要向＿＿领域倾斜，加强雾霾治理、癌症等重大疾病防治攻关，使科技更好造福人民。",
-		"index": "26",
+		"index": "28",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -197,8 +366,8 @@
 		}]
 	}, {
 		"img": "",
-		"title": "深化＿＿关键领域改革。以改革开放40周年为重要契机，推动改革取得新突破，不断解放和发展社会生产力。",
-		"index": "27",
+		"title": "深化＿＿关键领域改革。以改革开放40周年为重要契机，推动改革取得新突破，不断解放和发展社会生产力。 ",
+		"index": "29",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -208,10 +377,10 @@
 			"content": "战略性",
 			"isRight": false
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "构建＿＿新型政商关系，健全企业家参与涉企政策制定机制。",
-		"index": "28",
+		"title": "构建＿＿新型政商关系，健全企业家参与涉企政策制定机制。 ",
+		"index": "30",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -221,23 +390,23 @@
 			"content": "亲清",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
 		"title": "要用有力的＿＿保护、顺畅的＿＿流动，让市场活力和社会创造力竞相迸发。",
-		"index": "29",
+		"index": "31",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "产权    要素",
+			"content": "产权   要素",
 			"isRight": true
 		}, {
-			"content": "要素    产权",
+			"content": "要素   产权",
 			"isRight": false
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "深化养老保险制度改革，建立企业职工基本养老保险基金＿＿调剂制度。",
-		"index": "31",
+		"title": "深化养老保险制度改革，建立企业职工基本养老保险基金＿＿调剂制度。 ",
+		"index": "32",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -247,23 +416,23 @@
 			"content": "地方",
 			"isRight": false
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "大力实施＿＿。科学制定规划，健全城乡融合发展体制机制，依靠改革创新壮大乡村发展新动能。",
-		"index": "35",
+		"title": "大力实施＿＿。科学制定规划，健全城乡融合发展体制机制，依靠改革创新壮大乡村发展新动能。 ",
+		"index": "33",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "城乡发展一体化 ",
+			"content": "城乡发展一体化",
 			"isRight": false
 		}, {
 			"content": "乡村振兴战略",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "推动形成全面开放新格局。进一步拓展开放范围和层次，完善开放结构布局和体制机制，以＿＿开放推动高质量发展。",
-		"index": "39",
+		"title": "推动形成全面开放新格局。进一步拓展开放范围和层次，完善开放结构布局和体制机制，以＿＿开放推动高质量发展。 ",
+		"index": "34",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -273,10 +442,10 @@
 			"content": "全方位",
 			"isRight": false
 		}]
-	}, {
+	},{
 		"img": "",
 		"title": "提高保障和改善民生水平。要在发展基础上多办利民实事、多解民生难事，兜牢民生底线，不断提升人民群众的获得感、幸福感、＿＿。",
-		"index": "41",
+		"index": "35",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -286,10 +455,10 @@
 			"content": "安全感",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "今年的政府工作报告提出，提高＿＿起征点，增加子女教育、大病医疗等专项费用扣除，合理减负，鼓励人民群众通过劳动增加收入、迈向富裕。",
-		"index": "42",
+		"title": "今年的政府工作报告提出，提高＿＿起征点，增加子女教育、大病医疗等专项费用扣除，合理减负，鼓励人民群众通过劳动增加收入、迈向富裕。 ",
+		"index": "36",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -299,36 +468,10 @@
 			"content": "个人所得税",
 			"isRight": true
 		}]
-	}, {
-		"img": "",
-		"title": "切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生＿＿负担重问题。",
-		"index": "43",
-		"score": 1,
-		"isMultiselect": false,
-		"answer": [{
-			"content": "课外",
-			"isRight": true
-		}, {
-			"content": "考试",
-			"isRight": false
-		}]
-	}, {
-		"img": "",
-		"title": "推进平安中国建设，严密防范和坚决打击暴力恐怖活动，依法开展＿＿专项斗争。",
-		"index": "45",
-		"score": 1,
-		"isMultiselect": false,
-		"answer": [{
-			"content": "扫黑除恶",
-			"isRight": true
-		}, {
-			"content": "打黑除恶",
-			"isRight": false
-		}]
-	}, {
+	},{
 		"img": "",
 		"title": "优化政府机构设置和职能配置，深化机构改革，形成职责明确、依法行政的政府治理体系，增强政府公信力和＿＿。",
-		"index": "46",
+		"index": "37",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -338,23 +481,23 @@
 			"content": "执行力",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
 		"title": "我们要以党在新时代的＿＿为引领，牢固确立习近平强军思想在国防和军队建设中的指导地位，坚定不移走中国特色强军之路，全面推进练兵备战工作，坚决有力维护国家主权、安全、发展利益。",
-		"index": "47",
+		"index": "38",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "兴军目标",
+			"content": "行军目标",
 			"isRight": false
 		}, {
 			"content": "强军目标",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "国务院总理李克强3月5日在作政府工作报告时表示，支持香港、澳门＿＿，深化内地与港澳地区交流合作。",
-		"index": "48",
+		"title": "今年的政府工作报告指出，支持香港、澳门＿＿，深化内地与港澳地区交流合作。",
+		"index": "39",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -364,10 +507,10 @@
 			"content": "立足“两制”特色优势",
 			"isRight": false
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "国务院总理李克强3月5日在作政府工作报告时表示，坚决维护国家主权和领土完整，＿＿任何“台独”分裂图谋和行径。",
-		"index": "49",
+		"title": "今年的作政府工作报告指出，坚决维护国家主权和领土完整，＿＿任何“台独”分裂图谋和行径。",
+		"index": "40",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -377,10 +520,10 @@
 			"content": "绝不容忍",
 			"isRight": true
 		}]
-	}, {
+	},{
 		"img": "",
-		"title": "国务院总理李克强3月5日在作政府工作报告时说，我们将始终不渝走和平发展道路，推动构建＿＿。",
-		"index": "50",
+		"title": "今年的政府工作报告指出，我们将始终不渝走和平发展道路，推动构建＿＿。",
+		"index": "41",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -390,10 +533,777 @@
 			"content": "新型大国关系",
 			"isRight": false
 		}]
+	},{
+		"img": "",
+		"title": "切实降低农村学生辍学率，抓紧消除城镇“大班额”，着力解决中小学生＿＿负担重问题。",
+		"index": "42",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "课外",
+			"isRight": true
+		}, {
+			"content": "考试",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "推进平安中国建设，严密防范和坚决打击暴力恐怖活动，依法开展＿＿专项斗争。",
+		"index": "43",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "扫黑除恶",
+			"isRight": true
+		}, {
+			"content": "打黑除恶",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "宪法序言第七自然段中有这样的表述：“在马克思列宁主义、毛泽东思想、邓小平理论、‘三个代表’重要思想、科学发展观、＿＿指引下”。",
+		"index": "44",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "习近平新时代中国特色社会主义思想",
+			"isRight": true
+		}, {
+			"content": "习近平中国特色社会主义思想",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "把我国建设成为富强民主文明和谐美丽的社会主义＿＿，实现中华民族伟大复兴。",
+		"index": "45",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "现代化国家",
+			"isRight": false
+		}, {
+			"content": "现代化强国",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "宪法序言第十自然段中“在长期的革命和建设过程中”修改为“在长期的革命、建设、＿＿过程中”。",
+		"index": "46",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "改革",
+			"isRight": true
+		}, {
+			"content": "奋斗",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "坚持和平发展道路，坚持＿＿开放战略。",
+		"index": "47",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "互利互惠",
+			"isRight": false
+		}, {
+			"content": "互利共赢",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "发展同各国的外交关系和经济、文化交流，推动构建＿＿。",
+		"index": "48",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人类命运共同体",
+			"isRight": true
+		}, {
+			"content": "地球村",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "中华人民共和国的根本制度是＿＿。",
+		"index": "49",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "社会主义制度",
+			"isRight": true
+		}, {
+			"content": "人民代表大会制度",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "中国特色社会主义最本质的特征是＿＿。",
+		"index": "50",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "中国共产党领导",
+			"isRight": true
+		}, {
+			"content": "改革开放",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "国家行政机关、＿＿、审判机关、检察机关都由人民代表大会产生，对它负责，受它监督。",
+		"index": "51",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "公安机关",
+			"isRight": false
+		}, {
+			"content": "监察机关",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "国家倡导＿＿，提倡爱祖国、爱人民、爱劳动、爱科学、爱社会主义的公德。",
+		"index": "52",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "社会主义核心价值观",
+			"isRight": true
+		}, {
+			"content": "社会诚信",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "＿＿就职时应当依照法律规定公开进行宪法宣誓。",
+		"index": "53",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "国家工作人员",
+			"isRight": true
+		}, {
+			"content": "公务员",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "宪法第八十九条“国务院行使下列职权”中第六项修改为“（六）领导和管理经济工作和城乡建设、＿＿”。",
+		"index": "54",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "社会文明建设",
+			"isRight": false
+		}, {
+			"content": "生态文明建设",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "国家监察委员会＿＿地方各级监察委员会的工作，上级监察委员会＿＿下级监察委员会的工作。",
+		"index": "55",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "监督  监督",
+			"isRight": false
+		}, {
+			"content": "领导  领导",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "监察委员会依照法律规定＿＿，不受行政机关、社会团体和个人的干涉。",
+		"index": "56",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "行使监察权",
+			"isRight": false
+		}, {
+			"content": "独立行使监察权",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "第一届全国人民代表大会第一次会议通过《中华人民共和国宪法》是在哪一年？",
+		"index": "57",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "1954年",
+			"isRight": true
+		}, {
+			"content": "1950年",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "我国现行宪法是＿＿宪法",
+		"index": "58",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "2018年",
+			"isRight": false
+		}, {
+			"content": "1982年",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "＿＿是国家根本法，是国家各种制度和法律法规的总依据。",
+		"index": "59",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "刑法",
+			"isRight": false
+		}, {
+			"content": "宪法",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "宪法法律的权威源自＿＿。",
+		"index": "60",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人民的内心拥护和真诚信仰",
+			"isRight": true
+		}, {
+			"content": "人民的内心拥护",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "要在全社会广泛开展＿＿、遵守宪法、维护宪法、运用宪法的宣传教育。 ",
+		"index": "61",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "尊崇宪法、学习宪法",
+			"isRight": true
+		}, {
+			"content": "研究宪法、学习宪法",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "把国家各项事业和各项工作全面纳入＿＿的轨道，把实施宪法提高到新的水平。",
+		"index": "62",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "依法治国、以德治国",
+			"isRight": false
+		}, {
+			"content": "依法治国、依宪治国",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "习近平总书记强调：保证宪法实施，就是保证＿＿的实现。",
+		"index": "63",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人民根本利益",
+			"isRight": true
+		}, {
+			"content": "群众基本权利",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "深化国家监察体制改革是以习近平同志为核心的党中央作出的事关全局的重大＿＿体制改革，是强化党和国家自我监督的重大决策部署。",
+		"index": "64",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "社会",
+			"isRight": false
+		}, {
+			"content": "政治",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "监察法是＿＿国家立法，是一部对国家监察工作起统领性和＿＿作用的法律。",
+		"index": "65",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "反腐败  基础性",
+			"isRight": true
+		}, {
+			"content": "反腐败  指导性",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "党内监督是对全体党员尤其是对＿＿实行的监督，国家监察是对所有行使公权力的＿＿实行的监督。",
+		"index": "66",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "党员干部  行政人员",
+			"isRight": false
+		}, {
+			"content": "党员干部  公职人员",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "监察机关在调查过程中，查封、扣押的财物、文件经查明与案件无关的，应当在查明后＿＿内解除查封、扣押，予以退还。",
+		"index": "67",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "三日",
+			"isRight": true
+		}, {
+			"content": "一周",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "被调查人既涉嫌严重职务违法或者职务犯罪，又涉嫌其他违法犯罪的，一般应当由＿＿机关为主调查。",
+		"index": "68",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "检察",
+			"isRight": false
+		}, {
+			"content": "监察",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "监察人员辞职、退休＿＿内，不得从事与监察和司法工作相关联且可能发生利益冲突的职业。",
+		"index": "69",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "三年",
+			"isRight": true
+		}, {
+			"content": "两年",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "深化＿＿改革是推进国家治理体系和治理能力现代化的一场深刻变革。",
+		"index": "70",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "行政管理体制",
+			"isRight": false
+		}, {
+			"content": "党和国家机构",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "深化党和国家机构改革，必须贯彻坚持党的全面领导、坚持以＿＿为中心、坚持优化协同高效、坚持全面依法治国的原则。",
+		"index": "71",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人民",
+			"isRight": true
+		}, {
+			"content": "国家",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "深化党和国家机构改革，形成＿＿的政府治理体系？",
+		"index": "72",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "总揽全局、协调各方",
+			"isRight": false
+		}, {
+			"content": "职责明确、依法行政",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "深化党和国家机构改革的＿＿任务是，完善坚持党的＿＿的制度，加强党对各领域各方面工作领导，确保党的领导全覆盖，确保党的领导更加坚强有力。",
+		"index": "73",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "首要  全面领导",
+			"isRight": true
+		}, {
+			"content": "重大  政治领导",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "要深入推进简政放权。最大限度减少政府对市场资源的＿＿配置，最大限度减少政府对市场活动的＿＿干预。",
+		"index": "74",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "直接  直接",
+			"isRight": true
+		}, {
+			"content": "直接  间接",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "统筹＿＿机构改革，是加强党的集中统一领导、实现机构职能优化协同高效的必然要求。",
+		"index": "75",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "党政军",
+			"isRight": false
+		}, {
+			"content": "党政军群",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "治理好我们这样的大国，要理顺中央和地方＿＿关系，更好发挥中央和地方两个积极性。",
+		"index": "76",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "职责",
+			"isRight": true
+		}, {
+			"content": "行政",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "组建＿＿。不再保留国土资源部、国家海洋局、国家测绘地理信息局。",
+		"index": "77",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "资源部",
+			"isRight": false
+		}, {
+			"content": "自然资源部",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "组建＿＿。不再保留环境保护部。",
+		"index": "78",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "生态环境部",
+			"isRight": true
+		}, {
+			"content": "生态保护部",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "组建国家＿＿。不再保留国家卫生和计划生育委员会。不再设立国务院深化医药卫生体制改革领导小组办公室。",
+		"index": "79",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "卫生委员会",
+			"isRight": false
+		}, {
+			"content": "卫生健康委员会",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "将司法部和＿＿的职责整合，重新组建司法部，作为国务院组成部门。",
+		"index": "80",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "法制工作委员会",
+			"isRight": false
+		}, {
+			"content": "国务院法制办公室",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "组建国家＿＿总局。不再保留国家新闻出版广电总局。",
+		"index": "81",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "广播电视",
+			"isRight": true
+		}, {
+			"content": "新闻出版",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "将公安部的出入境管理、边防检查职责整合，建立健全签证管理协调机制，组建国家＿＿管理局。",
+		"index": "82",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "移民",
+			"isRight": true
+		}, {
+			"content": "边防检查",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "小王的哥哥是解放军战士，快该退役了，转业安置的事儿＿＿管。",
+		"index": "83",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "退役军人事务部",
+			"isRight": true
+		}, {
+			"content": "民政部",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "年迈的父母退休后，沉迷于各种网购、电视购物，常常被忽悠，买了一大堆三无“保健品”。这事儿归＿＿管。",
+		"index": "84",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "国家市场监督管理总局",
+			"isRight": true
+		}, {
+			"content": "国家食品药品监督管理总局",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "妻子要生二孩，生育保险该由＿＿管。",
+		"index": "85",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "国家医疗保障局",
+			"isRight": true
+		}, {
+			"content": "国家卫生和计划生育委员会",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "小李想参加中央机关及其直属机构公务员录用考试，但是，他把报考的单位名称搞错了。下面＿＿是错的。",
+		"index": "86",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "国家安全部",
+			"isRight": false
+		}, {
+			"content": "国家安全生产监督管理总局",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "小李的同学也想参加中央机关及其直属机构公务员录用考试，他报考的单位名称正确的是＿＿。",
+		"index": "87",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "国家草原局",
+			"isRight": false
+		}, {
+			"content": "国家林业和草原局",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "对腐败犯罪始终保持高压态势，健全＿＿案件审判机制。",
+		"index": "88",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "职务犯罪",
+			"isRight": true
+		}, {
+			"content": "贪污犯罪",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "最高人民法院设立了＿＿个巡回法庭。",
+		"index": "89",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "5",
+			"isRight": false
+		}, {
+			"content": "6",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "突出整治＿＿和宗族恶势力犯罪，积极推进乡村治理。",
+		"index": "90",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "“村霸”",
+			"isRight": true
+		}, {
+			"content": "“村匪”",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "最高法依法纠正呼格吉勒图案、聂树斌案等重大冤错案件39件78人，并依法予以＿＿。",
+		"index": "91",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "经济补偿",
+			"isRight": false
+		}, {
+			"content": "国家赔偿",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "最高检与公安部共同挂牌督办“徐玉玉案”等62起重大案件，两年来共起诉＿＿犯罪5.1万人。 ",
+		"index": "92",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "电信网络诈骗",
+			"isRight": true
+		}, {
+			"content": "经济诈骗",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "在政协各级组织和各项活动中，中国共产党居于＿＿地位。",
+		"index": "93",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "决策",
+			"isRight": false
+		}, {
+			"content": "领导",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "人民政协是人民民主的重要制度，必须以＿＿为中心履职尽责。",
+		"index": "94",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "人民",
+			"isRight": true
+		}, {
+			"content": "国家",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "新当选的全国政协主席是＿＿ 。",
+		"index": "95",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "俞正声",
+			"isRight": false
+		}, {
+			"content": "汪洋",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "新当选的全国人大常委会委员长是＿＿。",
+		"index": "96",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "栗战书",
+			"isRight": true
+		}, {
+			"content": "张德江",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "新当选的最高人民检察院检察长是＿＿。",
+		"index": "97",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "曹建明",
+			"isRight": false
+		}, {
+			"content": "张军",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "新当选的最高人民法院院长是＿＿。",
+		"index": "98",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "周强",
+			"isRight": true
+		}, {
+			"content": "王胜俊",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "新当选的中华人民共和国国家监察委员会主任是＿＿。",
+		"index": "99",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "杨晓超",
+			"isRight": false
+		}, {
+			"content": "杨晓渡",
+			"isRight": true
+		}]
+	},{
+		"img": "",
+		"title": "新当选的中华人民共和国副主席是＿＿。",
+		"index": "100",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "王岐山",
+			"isRight": true
+		}, {
+			"content": "李源潮",
+			"isRight": false
+		}]
 	}],
 	"theme": "DANGJIAN",
 	"duration": 36000,
-	"title": "@所有人:来自新时代的一份考卷，请查收",
+	"title": "两会考卷来了",
 	"index": "",
 	"wxappid": "wx5ec3d35069383211",
 	"wxappsecret": "d94ea41d9cd2ba03c7cab5fc0e212cec",

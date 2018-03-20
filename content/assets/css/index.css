@@ -125,18 +125,25 @@
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+        height: 100%; }
       .zmiti-content-main-ui .zmiti-dangjian-question-C header span {
-        color: #ffe270;
+        color: #ffffff;
         font-size: 30px;
         margin: 0 20px; }
-      .zmiti-content-main-ui .zmiti-dangjian-question-C header img {
+      .zmiti-content-main-ui .zmiti-dangjian-question-C header img.ico-personal {
+        width: 60px;
+        position: absolute;
+        left: 10px;
+        top: 8px; }
+      .zmiti-content-main-ui .zmiti-dangjian-question-C header img.ico-clock {
         width: 40px;
         position: relative;
         top: -6px; }
       .zmiti-content-main-ui .zmiti-dangjian-question-C header label {
-        color: #ffe270; }
+        color: #ffffff;
+        position: absolute;
+        left: 100px;
+        top: 0; }
     .zmiti-content-main-ui .zmiti-dangjian-question-C .zmiti-dangjian-q-scroll {
       color: #b58f4e;
       width: 640px;

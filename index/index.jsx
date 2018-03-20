@@ -35,7 +35,9 @@ class ZmitiIndexApp extends Component {
 						<div className={'zmiti-title '+ this.state.className}>
 							<img src='./assets/images/person.gif' />
 						</div>
-
+						<div className={'zmiti-title-ico '+ this.state.className}>
+							<img src='./assets/images/ico_write.png' />
+						</div>
 					</div>
 
 					<div onTouchTap={this.beginTest.bind(this)} className={'zmiti-begin-test '+ this.state.className}>

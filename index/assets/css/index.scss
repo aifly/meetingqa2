@@ -204,6 +204,19 @@ $viewW: 10rem;
     }
 
   }
+  .zmiti-title-ico {
+    width: 2rem;
+    left: 3rem;
+    top:2.8rem;
+    position:absolute;
+    @include transform(translate3d(0, 300vh, 0));
+    @include transition(1s);
+
+    &.active {
+      @include transform(translate3d(0, 0, 0));
+    }
+
+  }
 
   .zmiti-title2 {
     width: 7.8rem;
@@ -233,7 +246,7 @@ $viewW: 10rem;
   .zmiti-begin-test {
     @include pos(a);
     bottom: 1rem;
-    left: 68%;
+    left: 65%;
     width: 250px;
     margin-left: -220px;
     opacity: 0;

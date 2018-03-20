@@ -66,8 +66,9 @@ class ZmitiContentApp extends Component {
 
 			<section className={'zmiti-dangjian-question-C  lt-full' +(this.state.showQList?' active':'')+(this.state.hideList?' hide':'')} style={mainStyle}>
 			<header style={{background:'url(./assets/images/header-bg.png) no-repeat',backgroundSize:'cover'}}>
-			<label>{this.state.currentQid+1} / {this.props.question.length}</label>
-			<img src='./assets/images/clock.png' />
+			<img className='ico-personal' src='./assets/images/person.gif' />
+			<label>已完成：{this.state.currentQid+1} / {this.props.question.length}</label>
+			<img className='ico-clock' src='./assets/images/clock.png' />
 			<span>{this.state.clock/60<10?'0'+(this.state.clock/60|0):this.state.clock/60|0}:{this.state.clock % 60<10?'0'+this.state.clock % 60:this.state.clock % 60} s</span>
 			</header>
 			

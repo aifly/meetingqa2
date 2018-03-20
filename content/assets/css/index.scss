@@ -152,6 +152,9 @@ $viewW: 640px;
         @include pos(r);
         top: -6px;
       }
+      label{
+        color: #ffe270;
+      }
 
     }
 
@@ -546,7 +549,7 @@ $viewW: 640px;
   }
 
   .zmiti-team {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     color: #fff;
     font-size: 30px;

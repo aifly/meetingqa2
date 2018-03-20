@@ -33,7 +33,7 @@ class ZmitiIndexApp extends Component {
 			conponent = <div ref='zmiti-index-page'  className='lt-full' style={indexStyle}>
 					<div className='zmiti-index-note'>
 						<div className={'zmiti-title '+ this.state.className}>
-							<img src='./assets/images/title1.png' />
+							<img src='./assets/images/person.gif' />
 						</div>
 
 					</div>
@@ -41,7 +41,7 @@ class ZmitiIndexApp extends Component {
 					<div onTouchTap={this.beginTest.bind(this)} className={'zmiti-begin-test '+ this.state.className}>
 						<img src='./assets/images/begin-test1.png'/>
 					</div>
-					<div className='zmiti-logo'>
+					<div className='zmiti-logo' style={{display:'none'}}>
 						<img src='./assets/images/zmiti.png' />
 						新华社新媒体中心出品
 					</div>

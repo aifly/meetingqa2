@@ -160,8 +160,8 @@ $viewW: 10rem;
   }
 
   .zmiti-index-note {
-    margin: 22vh auto 0;
-    width: 8.8rem;
+    margin: 27vh auto 0;
+    width: 7.6rem;
     @include pos(r);
   }
 
@@ -194,7 +194,7 @@ $viewW: 10rem;
   }
 
   .zmiti-title {
-    width: 8.75rem;
+    width: 2.15rem;
     left: 0.625rem;
     @include transform(translate3d(0, -50vh, 0));
     @include transition(.5s);
@@ -232,7 +232,7 @@ $viewW: 10rem;
 
   .zmiti-begin-test {
     @include pos(a);
-    top: 50vh;
+    bottom: 1rem;
     left: 68%;
     width: 250px;
     margin-left: -220px;

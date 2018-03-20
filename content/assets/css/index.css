@@ -135,6 +135,8 @@
         width: 40px;
         position: relative;
         top: -6px; }
+      .zmiti-content-main-ui .zmiti-dangjian-question-C header label {
+        color: #ffe270; }
     .zmiti-content-main-ui .zmiti-dangjian-question-C .zmiti-dangjian-q-scroll {
       color: #b58f4e;
       width: 640px;
@@ -421,7 +423,7 @@
   .zmiti-content-main-ui .zmiti-team1 {
     height: 0; }
   .zmiti-content-main-ui .zmiti-team {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     color: #fff;
     font-size: 30px;

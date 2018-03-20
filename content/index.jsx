@@ -66,6 +66,7 @@ class ZmitiContentApp extends Component {
 
 			<section className={'zmiti-dangjian-question-C  lt-full' +(this.state.showQList?' active':'')+(this.state.hideList?' hide':'')} style={mainStyle}>
 			<header style={{background:'url(./assets/images/header-bg.png) no-repeat',backgroundSize:'cover'}}>
+			<label>{this.state.currentQid+1} / {this.props.question.length}</label>
 			<img src='./assets/images/clock.png' />
 			<span>{this.state.clock/60<10?'0'+(this.state.clock/60|0):this.state.clock/60|0}:{this.state.clock % 60<10?'0'+this.state.clock % 60:this.state.clock % 60} s</span>
 			</header>
@@ -98,7 +99,7 @@ class ZmitiContentApp extends Component {
 				<img src='./assets/images/q-title.png' className='zmiti-q-title'/>
 				<span>{this.state.currentQid+1-(window.gkConfig[this.props.gk- (this.props.gk>window.gkConfig.length?0:1)]||0)}</span>
 				<span>{this.props.gk>=window.gkConfig.length?this.props.question.length - window.gkConfig[window.gkConfig.length-1]:window.gkConfig[this.props.gk]-(window.gkConfig[this.props.gk-1]||0)}</span>
-				<label>{this.state.currentQid+1} / {this.props.question.length}</label>
+				
 				</div>
 				<img src='./assets/images/q-title1.png' className='zmiti-q-title1'/>
 				</div>
@@ -167,7 +168,7 @@ class ZmitiContentApp extends Component {
 					<div className='zmiti-team1'></div>
 					<div className='zmiti-team'>编辑：孔唯千 侯帮兴 王丹</div>
 					<div className='zmiti-team1'></div>
-					<div className='zmiti-team'>联合制作：新华社客户端 半月谈杂志社</div>
+					<div className='zmiti-team'>联合制作：新华社客户端&nbsp;&nbsp;半月谈杂志社</div>
 
 					<div className='zmiti-back1' onTouchTap={this.closeTeam.bind(this)}>
 						返回

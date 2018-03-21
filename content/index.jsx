@@ -382,31 +382,43 @@ class ZmitiContentApp extends Component {
 			setTimeout(() => {
 				var scale = (Math.random() * 90 | 0) + 10;
 				var s = this;
-				if (s.state.rightAnswerCount === 30) {
+				if (s.state.rightAnswerCount === 100) {
 					scale = 99;
 
-				} else if (s.state.rightAnswerCount > 25) {
+				} else if (s.state.rightAnswerCount > 90) {
 
 					scale = (Math.random() * 8 | 0) + 90;
 
-				} else if (s.state.rightAnswerCount > 20) {
+				} else if (s.state.rightAnswerCount > 80) {
 
 					scale = (Math.random() * 10 | 0) + 80;
 
-				} else if (s.state.rightAnswerCount > 15) {
+				} else if (s.state.rightAnswerCount > 70) {
 
 					scale = (Math.random() * 20 | 0) + 60;
 
-				} else if (s.state.rightAnswerCount > 10) {
+				} else if (s.state.rightAnswerCount > 60) {
 
 					scale = (Math.random() * 20 | 0) + 40;
 
-				} else if (s.state.rightAnswerCount > 5) {
+				} else if (s.state.rightAnswerCount > 50) {
 
 					scale = (Math.random() * 20 | 0) + 20;
 
-				} else {
+				}else if (s.state.rightAnswerCount > 40) {
+
+					scale = (Math.random() * 20 | 0) + 10;
+
+				}else if (s.state.rightAnswerCount > 30) {
+
 					scale = (Math.random() * 10 | 0) + 10;
+
+				}else if (s.state.rightAnswerCount > 20) {
+
+					scale = (Math.random() * 10 | 0) + 0;
+
+				} else {
+					scale = (Math.random() * 5 | 0) + 3;
 				}
 
 				var ss = scale;

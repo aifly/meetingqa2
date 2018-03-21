@@ -444,7 +444,7 @@ export class App extends Component {
 				this.setState({
 					gk:this.state.gk+1
 				})
-				console.log(123)
+				
 			})
 
 			this.setState({

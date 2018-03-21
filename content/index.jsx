@@ -294,17 +294,28 @@ class ZmitiContentApp extends Component {
 
 		
 		if(this.state.currentQid < this.props.question.length && this.props.gk<=window.gkConfig.length-1){
-			console.log('gk');
+		 
 			obserable.trigger({
 				type:"nextGk"
 			})
+
+			if(this.props.gk === window.gkConfig.length-1){
+				obserable.trigger({
+					type: 'fillAnswer',
+					data: this.state.currentAnswer.concat([])
+				});
+			}
+			
+
 		}else{
+
 			obserable.trigger({
 				type: 'fillAnswer',
 				data: this.state.currentAnswer.concat([])
 			});
-			clearInterval(this.timer)
+
 			
+			clearInterval(this.timer)
 		}
 
 		this.props.myAnswer.map((item, i) => {

@@ -520,7 +520,6 @@
 						_this3.setState({
 							gk: _this3.state.gk + 1
 						});
-						console.log(123);
 					});
 
 					_this3.setState({
@@ -35754,15 +35753,24 @@
 				var obserable = this.props.obserable;
 
 				if (this.state.currentQid < this.props.question.length && this.props.gk <= window.gkConfig.length - 1) {
-					console.log('gk');
+
 					obserable.trigger({
 						type: "nextGk"
 					});
+
+					if (this.props.gk === window.gkConfig.length - 1) {
+						obserable.trigger({
+							type: 'fillAnswer',
+							data: this.state.currentAnswer.concat([])
+						});
+					}
 				} else {
+
 					obserable.trigger({
 						type: 'fillAnswer',
 						data: this.state.currentAnswer.concat([])
 					});
+
 					clearInterval(this.timer);
 				}
 

@@ -12,7 +12,10 @@ var config = {
     devServer: {
         inline: true,
         port: 4027,
-        hot: true
+        host: "0.0.0.0",
+        progress: true,
+        contentBase: '.',
+        disableHostCheck: true
     },
     externals: {
         //'react':'React',

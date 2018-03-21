@@ -1172,8 +1172,34 @@
 		}]
 	},{
 		"img": "",
-		"title": "最高法依法纠正呼格吉勒图案、聂树斌案等重大冤错案件39件78人，并依法予以＿＿。",
+		"title": "最高检积极投入＿＿风险专项整治，起诉破坏金融管理秩序、金融诈骗犯罪14.4万人，是前五年的2.2倍。",
 		"index": "91",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "互联网金融",
+			"isRight": true
+		}, {
+			"content": "非法集资",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "依法审理各类涉产权案件，坚决纠正涉产权冤错案件，平等保护各类＿＿合法权益。 ",
+		"index": "92",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "市场主体",
+			"isRight": true
+		}, {
+			"content": "经营主体",
+			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "最高法依法纠正呼格吉勒图案、聂树斌案等重大冤错案件39件78人，并依法予以＿＿。",
+		"index": "93",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -1185,8 +1211,8 @@
 		}]
 	},{
 		"img": "",
-		"title": "最高检与公安部共同挂牌督办“徐玉玉案”等62起重大案件，两年来共起诉＿＿犯罪5.1万人。 ",
-		"index": "92",
+		"title": "最高检与公安部共同挂牌督办“徐玉玉案”等62起重大案件，两年来共起诉＿＿犯罪5.1万人。",
+		"index": "94",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -1199,7 +1225,7 @@
 	},{
 		"img": "",
 		"title": "在政协各级组织和各项活动中，中国共产党居于＿＿地位。",
-		"index": "93",
+		"index": "95",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -1212,7 +1238,7 @@
 	},{
 		"img": "",
 		"title": "人民政协是人民民主的重要制度，必须以＿＿为中心履职尽责。",
-		"index": "94",
+		"index": "96",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -1224,73 +1250,34 @@
 		}]
 	},{
 		"img": "",
-		"title": "新当选的全国政协主席是＿＿ 。",
-		"index": "95",
-		"score": 1,
-		"isMultiselect": false,
-		"answer": [{
-			"content": "俞正声",
-			"isRight": false
-		}, {
-			"content": "汪洋",
-			"isRight": true
-		}]
-	},{
-		"img": "",
-		"title": "新当选的全国人大常委会委员长是＿＿。",
-		"index": "96",
-		"score": 1,
-		"isMultiselect": false,
-		"answer": [{
-			"content": "栗战书",
-			"isRight": true
-		}, {
-			"content": "张德江",
-			"isRight": false
-		}]
-	},{
-		"img": "",
-		"title": "新当选的最高人民检察院检察长是＿＿。",
+		"title": "有事好商量，众人的事情由众人商量，是人民民主的真谛，也是社会主义＿＿民主的重要原则。",
 		"index": "97",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "曹建明",
-			"isRight": false
-		}, {
-			"content": "张军",
+			"content": "协商",
 			"isRight": true
+		}, {
+			"content": "直接",
+			"isRight": false
 		}]
 	},{
 		"img": "",
-		"title": "新当选的最高人民法院院长是＿＿。",
+		"title": "中国共产党领导的多党合作和政治协商制度是我国的一项＿＿政治制度。",
 		"index": "98",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "周强",
+			"content": "基本",
 			"isRight": true
 		}, {
-			"content": "王胜俊",
+			"content": "根本",
 			"isRight": false
-		}]
-	},{
-		"img": "",
-		"title": "新当选的中华人民共和国国家监察委员会主任是＿＿。",
-		"index": "99",
-		"score": 1,
-		"isMultiselect": false,
-		"answer": [{
-			"content": "杨晓超",
-			"isRight": false
-		}, {
-			"content": "杨晓渡",
-			"isRight": true
 		}]
 	},{
 		"img": "",
 		"title": "习近平在十三届全国人大一次会议上强调，＿＿有信心，国家才有未来，国家才有力量。",
-		"index": "100",
+		"index": "99",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
@@ -1299,6 +1286,19 @@
 		}, {
 			"content": "劳动者",
 			"isRight": false
+		}]
+	},{
+		"img": "",
+		"title": "十三届全国人大一次会议在圆满完成各项议程后，＿＿在北京闭幕。",
+		"index": "100",
+		"score": 1,
+		"isMultiselect": false,
+		"answer": [{
+			"content": "3月15日",
+			"isRight": false
+		}, {
+			"content": "3月20日",
+			"isRight": true
 		}]
 	}],
 	"theme": "DANGJIAN",

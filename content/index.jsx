@@ -275,6 +275,7 @@ class ZmitiContentApp extends Component {
 	}
 
 
+
 	submitPaper() { //提交答卷
 		this.setState({
 			submit: true
@@ -633,6 +634,21 @@ class ZmitiContentApp extends Component {
 			IScroll,
 			obserable
 		} = this.props;
+
+
+		obserable.on('playByMuted',()=>{
+			this.refs['right'].muted = true;
+			this.refs['right'].play();
+
+
+			this.refs['error'].muted = true;
+			this.refs['error'].play();
+
+			setTimeout(()=>{
+				this.refs['error'].muted = false;
+				this.refs['right'].muted = false;
+			},1000)
+		})
 
 		obserable.on('submitPaper', () => {
 			this.submitPaper();

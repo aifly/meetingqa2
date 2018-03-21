@@ -73,6 +73,10 @@ class ZmitiIndexApp extends Component {
 			btnClick: true
 		});
 
+		obserable.trigger({
+			type:'playByMuted'
+		});
+
 		setTimeout(() => {
 			this.setState({
 				beginTest: true,

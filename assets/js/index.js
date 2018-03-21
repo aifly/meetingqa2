@@ -35034,6 +35034,10 @@
 					btnClick: true
 				});
 
+				obserable.trigger({
+					type: 'playByMuted'
+				});
+
 				setTimeout(function () {
 					_this.setState({
 						beginTest: true,
@@ -36051,6 +36055,19 @@
 				var _props = this.props;
 				var IScroll = _props.IScroll;
 				var obserable = _props.obserable;
+
+				obserable.on('playByMuted', function () {
+					_this8.refs['right'].muted = true;
+					_this8.refs['right'].play();
+
+					_this8.refs['error'].muted = true;
+					_this8.refs['error'].play();
+
+					setTimeout(function () {
+						_this8.refs['error'].muted = false;
+						_this8.refs['right'].muted = false;
+					}, 1000);
+				});
 
 				obserable.on('submitPaper', function () {
 					_this8.submitPaper();

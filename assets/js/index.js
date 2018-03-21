@@ -35566,9 +35566,9 @@
 										{ className: 'zmiti-team-btn', onTouchTap: this.showTeams.bind(this) },
 										'制作团队'
 									),
-									this.state.showTeam && _react2['default'].createElement(
+									_react2['default'].createElement(
 										'div',
-										{ className: 'zmiti-team-C', style: { background: "#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover" } },
+										{ className: 'zmiti-team-C', style: { display: this.state.showTeam ? 'block' : 'none', background: "#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover" } },
 										_react2['default'].createElement(
 											'div',
 											null,

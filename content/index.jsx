@@ -158,7 +158,7 @@ class ZmitiContentApp extends Component {
 			</div>
 
 			<div className='zmiti-team-btn' onTouchTap={this.showTeams.bind(this)}>制作团队</div>
-			{this.state.showTeam && <div className='zmiti-team-C' style={{background:"#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover"}}>
+			{   <div className='zmiti-team-C' style={{display:this.state.showTeam?'block':'none',background:"#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover"}}>
 				<div>
 					<div className='zmiti-team'>总策划：刘思扬</div>
 					<div className='zmiti-team'>出品：陈凯星 冯瑛冰</div>

@@ -410,29 +410,8 @@ class ZmitiContentApp extends Component {
 
 				var ss = scale;
 
-				var i = 0;
-				var t = setInterval(() => {
-
-
-					if (scale === 0) {
-						s.state.scale = 0;
-						s.forceUpdate();
-						clearInterval(t);
-						return;
-					}
-					if (i > 20) {
-
-						s.state.scale = scale;
-						s.forceUpdate();
-						clearInterval(t);
-						return;
-					}
-					s.state.scale = Math.random() * 100 | 0;
-					i++;
-					s.forceUpdate();
-
-
-				}, 100)
+				s.state.scale = scale;
+				s.forceUpdate();
 				var title = window.share.title.replace(/{rightAnswerCount}/, s.state.rightAnswerCount).replace(/{scale}/, scale).replace(/{level}/, s.state.level);
 				if (s.state.rightAnswerCount === 0) {
 					title = '学习政府工作报告，尚需努力！';
@@ -512,8 +491,12 @@ class ZmitiContentApp extends Component {
 
 	chooseMyAnswer(i) {
 		window.c = this;
-		console.log(this.props.myAnswer[this.state.currentQid] , this.props.myAnswer[this.state.currentQid] )
-		if (!this.props.myAnswer[this.state.currentQid] && this.props.myAnswer[this.state.currentQid] !== 0 || 1) {
+		
+		if (!this.props.myAnswer[this.state.currentQid] && this.props.myAnswer[this.state.currentQid] !== 0
+			&&!this.props.question[this.state.currentQid].isClicked
+			) {
+
+			this.props.question[this.state.currentQid].isClicked = true;
 			var {obserable} = this.props;
 
 			this.props.question[this.state.currentQid].answer.map((itne, i) => {

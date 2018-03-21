@@ -35405,6 +35405,9 @@
 										height: _this.viewH - 78,
 										background: _this.props.indexBg ? '#fff url(' + _this.props.indexBg + ') no-repeat center / cover' : "#fff url(./assets/images/bg1.jpg) no-repeat center center / cover "
 									};
+									if (!(_this.state.currentQid === q || _this.state.currentQid === q - 1 || _this.state.currentQid === q + 1)) {
+										return '';
+									}
 
 									return _react2['default'].createElement(
 										'section',
@@ -35920,7 +35923,7 @@
 					result: '',
 					currentAnswer: []
 				}, function () {
-					_this4['scroll' + _this4.state.currentQid].refresh();
+					_this4['scroll' + _this4.state.currentQid] && _this4['scroll' + _this4.state.currentQid].refresh();
 					//this.scroll.refresh();
 				});
 			}
@@ -36087,7 +36090,7 @@
 					});
 					setTimeout(function () {
 						_this8.props.question.map(function (item, i) {
-							_this8['scroll' + i].refresh();
+							_this8['scroll' + i] && _this8['scroll' + i].refresh();
 						});
 					}, 1000);
 				});

@@ -85,6 +85,9 @@ class ZmitiContentApp extends Component {
 					height:this.viewH - 78,
 					background:this.props.indexBg? '#fff url('+this.props.indexBg+') no-repeat center / cover' : "#fff url(./assets/images/bg1.jpg) no-repeat center center / cover "
 				}
+				if(!(this.state.currentQid === q || this.state.currentQid === q-1 || this.state.currentQid === q+1 )){
+					return '';
+				}
 
 				return	<section className={'zmiti-dangjian-q-scroll '+ className} ref={'zmiti-dangjian-q-scroll'+q} key={q} style={scrollStyle}>
 				<audio src='./assets/music/error.mp3' ref='error'></audio>
@@ -497,7 +500,7 @@ class ZmitiContentApp extends Component {
 			result: '',
 			currentAnswer: []
 		}, () => {
-			this['scroll' + this.state.currentQid].refresh();
+			this['scroll' + this.state.currentQid] && this['scroll' + this.state.currentQid].refresh();
 			//this.scroll.refresh();
 		})
 	}
@@ -669,7 +672,7 @@ class ZmitiContentApp extends Component {
 			});
 			setTimeout(() => {
 				this.props.question.map((item, i) => {
-					this['scroll' + i].refresh();
+					this['scroll' + i]&&this['scroll' + i].refresh();
 				});
 			}, 1000)
 

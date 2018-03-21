@@ -114,7 +114,7 @@ class ZmitiContentApp extends Component {
 					</div>
 				})}
 
-				{(this.props.myAnswer.length>=this.props.question.length-1 || window.gkConfig[this.props.gk] === this.state.currentQid+1) && <div onTouchTap={this.submitPaper.bind(this)} className={'zmiti-dangjian-submit-btn ' + (this.state.submit?'active':'')}>提交答卷</div>}
+				{(this.props.myAnswer.length>=this.props.question.length-1 || window.gkConfig[this.props.gk] === this.state.currentQid+1) && false && <div onTouchTap={this.submitPaper.bind(this)} className={'zmiti-dangjian-submit-btn ' + (this.state.submit?'active':'')}>提交答卷</div>}
 				{this.props.myAnswer.length<this.props.question.length-1 && this.props.questionType!=='single' && <div onTouchTap={this.doNext.bind(this)} className={'zmiti-dangjian-submit-btn ' + (this.state.submit?'active':'')}>下一题</div>}
 				</div>
 				</section>	
@@ -535,6 +535,8 @@ class ZmitiContentApp extends Component {
 					setTimeout(() => {
 						this.doNext();
 					}, 500)
+				}else{
+					this.submitPaper();
 				}
 
 			} else { //多选题or混合题目。

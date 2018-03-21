@@ -87,6 +87,7 @@
 				}
 			}
 			function onDocumentTouchMove( event ) {
+
 				if ( event.touches.length == 1 ) {
 					event.preventDefault();
 					mouseX = event.touches[ 0 ].pageX - windowHalfX;
@@ -104,8 +105,14 @@
 				camera.position.y += ( - mouseY - camera.position.y ) * .05;
 				camera.lookAt( scene.position );
 				renderer.render( scene, camera );
-				analyser.getByteFrequencyData && analyser.getByteFrequencyData(arr);
-				console.log(arr);
+				if(arr.length){
+
+					analyser.getByteFrequencyData(arr);
+					particles.forEach(function(item,i){
+
+						item.position.y = arr[i];
+					})
+				}
 			}
 
 
@@ -117,7 +124,7 @@
 				gainNode.connect(ac.destination);
 
 				analyser = ac.createAnalyser();
-				analyser.fftSize  = 512;
+				analyser.fftSize  = 1024;
 				analyser.connect(gainNode);
 
 				
@@ -132,6 +139,10 @@
 						bufferSource.buffer = buffer;
 						bufferSource.connect(analyser);
 						//bufferSource.connect(ac.destination);
+						
+						document.addEventListener('touchstart',function(){
+							bufferSource[bufferSource.start?'start':'noteOn'](0);	
+						})
 						bufferSource[bufferSource.start?'start':'noteOn'](0);
 
 						arr = new Uint8Array(analyser.frequencyBinCount);

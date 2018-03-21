@@ -35458,7 +35458,7 @@
 														_this.state.iNow === i && _react2['default'].createElement('img', { src: './assets/images/' + (_this.state.result === 'active' ? 'right' : 'error') + '.png' })
 													);
 												}),
-												(_this.props.myAnswer.length >= _this.props.question.length - 1 || window.gkConfig[_this.props.gk] === _this.state.currentQid + 1) && _react2['default'].createElement(
+												(_this.props.myAnswer.length >= _this.props.question.length - 1 || window.gkConfig[_this.props.gk] === _this.state.currentQid + 1) && false && _react2['default'].createElement(
 													'div',
 													{ onTouchTap: _this.submitPaper.bind(_this), className: 'zmiti-dangjian-submit-btn ' + (_this.state.submit ? 'active' : '') },
 													'提交答卷'
@@ -35955,6 +35955,8 @@
 							setTimeout(function () {
 								_this5.doNext();
 							}, 500);
+						} else {
+							this.submitPaper();
 						}
 					} else {
 						//多选题or混合题目。

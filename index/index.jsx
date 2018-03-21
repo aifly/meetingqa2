@@ -31,15 +31,14 @@ class ZmitiIndexApp extends Component {
 				backgroundSize: 'cover'
 			}
 			conponent = <div ref='zmiti-index-page'  className='lt-full' style={indexStyle}>
-					<div className='zmiti-index-note'>
-						<div className={'zmiti-title '+ this.state.className}>
-							<img src='./assets/images/person.gif' />
-						</div>
-						<div className={'zmiti-title-ico '+ this.state.className}>
-							<img src='./assets/images/ico_write.png' />
-						</div>
-					</div>
 
+					<div className={'zmiti-title '+ this.state.className}>
+						<img src='./assets/images/person.gif' />
+					</div>					
+
+					<div className={'zmiti-title-ico '+ this.state.className}>
+						<img src='./assets/images/ico_write.png' />
+					</div>
 					<div onTouchTap={this.beginTest.bind(this)} className={'zmiti-begin-test '+ this.state.className}>
 						<img src='./assets/images/begin-test1.png'/>
 					</div>

@@ -42,9 +42,9 @@ class ZmitiIndexApp extends Component {
 					<div onTouchTap={this.beginTest.bind(this)} className={'zmiti-begin-test '+ this.state.className}>
 						<img src='./assets/images/begin-test1.png'/>
 					</div>
-					<div className='zmiti-logo' style={{display:'none'}}>
+					<div className='zmiti-logo'>
 						<img src='./assets/images/zmiti.png' />
-						新华社新媒体中心出品
+						新华社新媒体中心
 					</div>
 				</div>
 		}

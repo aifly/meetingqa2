@@ -229,10 +229,10 @@ $viewW: 10rem;
 
   .zmiti-logo {
     @include pos(a);
-    width: 5rem;
+    width: 4rem;
     color: #fff;
-    right: .1rem;
-    bottom: .2rem;
+    right: 0rem;
+    bottom: .8rem;
     @include transform(scale(.7));
     text-align: center;
     @include transformOrigin(right bottom);
@@ -248,7 +248,7 @@ $viewW: 10rem;
   .zmiti-begin-test {
     @include pos(a);
     bottom: .7rem;
-    left: 65%;
+    left: 62%;
     width: 250px;
     margin-left: -220px;
     opacity: 0;

@@ -196,10 +196,10 @@
     transform: translate3d(10rem, 0, 0); }
   .zmiti-index-main-ui .zmiti-logo {
     position: absolute;
-    width: 5rem;
+    width: 4rem;
     color: #fff;
-    right: .1rem;
-    bottom: .2rem;
+    right: 0rem;
+    bottom: .8rem;
     -webkit-transform: scale(0.7);
     transform: scale(0.7);
     text-align: center;
@@ -212,7 +212,7 @@
   .zmiti-index-main-ui .zmiti-begin-test {
     position: absolute;
     bottom: .7rem;
-    left: 65%;
+    left: 62%;
     width: 250px;
     margin-left: -220px;
     opacity: 0;

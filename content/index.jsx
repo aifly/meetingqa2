@@ -164,7 +164,7 @@ class ZmitiContentApp extends Component {
 			{   <div className='zmiti-team-C' style={{display:this.state.showTeam?'block':'none',background:"#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover"}}>
 				<div>
 					<div className='zmiti-team'>总策划：刘思扬</div>
-					<div className='zmiti-team'>出品：陈凯星 冯瑛冰</div>
+					<div className='zmiti-team'>出品：陈凯星 冯瑛冰 叶俊东</div>
 					<div className='zmiti-team1'></div>
 					<div className='zmiti-team'>监制：齐慧杰 孙爱东</div>
 					<div className='zmiti-team'>统筹：黄庆华 曹晓轩</div>

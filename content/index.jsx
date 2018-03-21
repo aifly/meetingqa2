@@ -142,7 +142,7 @@ class ZmitiContentApp extends Component {
 			</div>
 
 
-			{this.state.currentQid >= this.props.question.length && <div onTouchTap={this.watchAnswer.bind(this)} className='zmiti-dangjian-result-btn zmiti-dangjian-result-btn1'>
+			{this.props.gk>=window.gkConfig.length && <div onTouchTap={this.watchAnswer.bind(this)} className='zmiti-dangjian-result-btn zmiti-dangjian-result-btn1'>
 							<span><img src='./assets/images/watch.png'/></span>
 							<span>查看答案</span>
 						</div>}

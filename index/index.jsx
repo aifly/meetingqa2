@@ -27,7 +27,7 @@ class ZmitiIndexApp extends Component {
 		if (this.props.indexPage) {
 
 			var indexStyle = {
-				background: 'url(' + this.props.indexPage + ') no-repeat  center bottom',
+				background: 'url(' + this.props.indexPage + ') no-repeat  center center',
 				backgroundSize: 'cover'
 			}
 			conponent = <div ref='zmiti-index-page'  className='lt-full' style={indexStyle}>

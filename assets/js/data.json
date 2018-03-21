@@ -1289,21 +1289,21 @@
 		}]
 	},{
 		"img": "",
-		"title": "新当选的中华人民共和国副主席是＿＿。",
+		"title": "习近平在十三届全国人大一次会议上强调，＿＿有信心，国家才有未来，国家才有力量。",
 		"index": "100",
 		"score": 1,
 		"isMultiselect": false,
 		"answer": [{
-			"content": "王岐山",
+			"content": "人民",
 			"isRight": true
 		}, {
-			"content": "李源潮",
+			"content": "劳动者",
 			"isRight": false
 		}]
 	}],
 	"theme": "DANGJIAN",
 	"duration": 36000,
-	"title": "两会考卷来了",
+	"title": "互动测试！两会考卷100题，请收藏",
 	"index": "",
 	"wxappid": "wx5ec3d35069383211",
 	"wxappsecret": "d94ea41d9cd2ba03c7cab5fc0e212cec",
@@ -1328,12 +1328,12 @@
 	}],
 	"isMultiselect": false,
 	"showLevel": true,
-	"indexPage": "./assets/images/index-bg1.jpg",
+	"indexPage": "./assets/images/index-bg2.jpg",
 	"loadingImg": [
 		"./assets/images/300.png",
 		"./assets/images/title1.png",
 		"./assets/images/zmiti.png",
-		"./assets/images/index-bg1.jpg",
+		"./assets/images/index-bg2.jpg",
 		"./assets/images/bg1.jpg",
 		"./assets/images/header-bg.png",
 		"./assets/images/watch.png",

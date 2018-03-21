@@ -89,7 +89,7 @@ class ZmitiContentApp extends Component {
 				return	<section className={'zmiti-dangjian-q-scroll '+ className} ref={'zmiti-dangjian-q-scroll'+q} key={q} style={scrollStyle}>
 				<audio src='./assets/music/error.mp3' ref='error'></audio>
 				<audio src='./assets/music/right1.mp3' ref='right'></audio>
-				<section style={{paddingBottom:60}}>
+				<section  style={{paddingBottom:60,display:this.state.showTeam?'none':'block'}}>
 				<div className='zmiti-dangjian-q-title'>
 				{question.isMultiselect && <span hidden> * 此题为多选题 </span>}
 				<article>
@@ -158,11 +158,11 @@ class ZmitiContentApp extends Component {
 			</div>
 
 			<div className='zmiti-team-btn' onTouchTap={this.showTeams.bind(this)}>制作团队</div>
-			{this.state.showTeam && <div className='zmiti-team-C' style={{background:"#fff url(./assets/images/bg1.jpg) no-repeat center center / cover"}}>
+			{this.state.showTeam && <div className='zmiti-team-C' style={{background:"#ccc url(./assets/images/bg1.jpg) no-repeat center center / cover"}}>
 				<div>
 					<div className='zmiti-team'>总策划：刘思扬</div>
-					<div className='zmiti-team1'></div>
 					<div className='zmiti-team'>出品：陈凯星 冯瑛冰</div>
+					<div className='zmiti-team1'></div>
 					<div className='zmiti-team'>监制：齐慧杰 孙爱东</div>
 					<div className='zmiti-team'>统筹：黄庆华 曹晓轩</div>
 					<div className='zmiti-team'>试题：王谦 班和平 苏蕾 常琳</div>
@@ -217,6 +217,7 @@ class ZmitiContentApp extends Component {
 	showTeams() {
 		this.setState({
 			showTeam: true
+		},()=>{
 		})
 	}
 

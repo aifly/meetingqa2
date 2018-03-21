@@ -375,6 +375,7 @@ $viewW: 640px;
   }
 
   .zmiti-dangjian-result-page {
+
     &>div {
       width: 100%;
       @include pos(a);
@@ -526,16 +527,20 @@ $viewW: 640px;
   }
 
   .zmiti-team-C {
+
     @include pos(a);
+
     width: 100%;
-    height: 100vh;
+    height: 100%;
     left: 0;
     top: 0;
-    z-index: 1000;
+    z-index: 11111222;
+
 
     &>div {
       width: 9rem;
       margin: 20vh auto 1rem;
+      color:#000;
     }
 
     .zmiti-back1 {
@@ -558,6 +563,9 @@ $viewW: 640px;
 
   .zmiti-team {
     width: 95%;
+    height: 1rem;
+   
+    display: block;
     margin: 0 auto;
     color: #b58f4e;
     font-size: 30px;

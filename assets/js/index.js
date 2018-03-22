@@ -36077,7 +36077,7 @@
 					setTimeout(function () {
 						_this8.refs['error'].muted = false;
 						_this8.refs['right'].muted = false;
-					}, 1000);
+					}, 3000);
 				});
 
 				obserable.on('submitPaper', function () {

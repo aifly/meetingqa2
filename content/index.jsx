@@ -661,7 +661,7 @@ class ZmitiContentApp extends Component {
 			setTimeout(()=>{
 				this.refs['error'].muted = false;
 				this.refs['right'].muted = false;
-			},1000)
+			},3000)
 		})
 
 		obserable.on('submitPaper', () => {

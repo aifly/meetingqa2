@@ -292,20 +292,30 @@ class ZmitiContentApp extends Component {
 			obserable
 		} = this.props;
 
+
+		
 		
 		if(this.state.currentQid < this.props.question.length && this.props.gk<=window.gkConfig.length-1){
-		 
+		 	
 			obserable.trigger({
 				type:"nextGk"
-			})
+			});
 
-			if(this.props.gk === window.gkConfig.length-1){
-				obserable.trigger({
-					type: 'fillAnswer',
-					data: this.state.currentAnswer.concat([])
-				});
-			}
-			
+
+
+			setTimeout(()=>{
+				
+				if(this.state.currentQid+1 === window.gkConfig[this.props.gk-1]){
+
+
+					obserable.trigger({
+						type: 'fillAnswer',
+						data: this.state.currentAnswer.concat([])
+					});
+				}
+			},100)
+
+
 
 		}else{
 
@@ -318,165 +328,173 @@ class ZmitiContentApp extends Component {
 			clearInterval(this.timer)
 		}
 
-		this.props.myAnswer.map((item, i) => {
-			this.props.question[i].rightAnswer = [];
+		
 
-			this.props.question[i].answer.map((a, k) => {
-				if (a.isRight) {
-					this.props.question[i].rightAnswer.push(k);
+		setTimeout(()=>{
+			this.props.myAnswer.map((item, i) => {
+				this.props.question[i].rightAnswer = [];
+
+				this.props.question[i].answer.map((a, k) => {
+					if (a.isRight) {
+						this.props.question[i].rightAnswer.push(k);
+					} else {
+						this.props.question[i].rightAnswer.push(undefined);
+					}
+				})
+
+			});
+			var rightAnswerCount = 0;
+			this.props.question.map((item, i) => {
+				if (this.props.questionType !== 'single') {
+					var isRight = 0;
+					this.props.question[i].rightAnswer.map((right, k) => {
+						if (this.props.myAnswer[i][k] === right) {
+							isRight++
+						}
+					})
+					if (isRight >= this.props.question[i].rightAnswer.length) {
+						score += this.props.question[i].score;
+					}
+
+
+
 				} else {
-					this.props.question[i].rightAnswer.push(undefined);
+
+
+					this.props.question[i].rightAnswer&&this.props.question[i].rightAnswer.map((right, k) => {
+
+						if (right === this.props.myAnswer[i][0] && this.props.myAnswer[i][0] !== undefined) {
+							score += this.props.question[i].score;
+							rightAnswerCount++;
+
+						}
+
+					})
+
+
 				}
+			});
+
+			score >= 100 && (score = 100);
+
+			var level = '';
+			this.props.level.map((item, i) => {
+				if (score <= item.score) {
+					level = item.name;
+				}
+			});
+
+			this.setState({
+				level
 			})
 
-		});
-		var rightAnswerCount = 0;
-		this.props.question.map((item, i) => {
-			if (this.props.questionType !== 'single') {
-				var isRight = 0;
-				this.props.question[i].rightAnswer.map((right, k) => {
-					if (this.props.myAnswer[i][k] === right) {
-						isRight++
-					}
-				})
-				if (isRight >= this.props.question[i].rightAnswer.length) {
-					score += this.props.question[i].score;
-				}
-
-
-
-			} else {
-
-
-				this.props.question[i].rightAnswer&&this.props.question[i].rightAnswer.map((right, k) => {
-					if (right === this.props.myAnswer[i][0] && this.props.myAnswer[i][0] !== undefined) {
-						score += this.props.question[i].score;
-						rightAnswerCount++;
-					}
-
-				})
-
-
+			if (!this.props.showLevel) {
+				level = score + '分';
 			}
-		});
 
-		score >= 100 && (score = 100);
-
-		var level = '';
-		this.props.level.map((item, i) => {
-			if (score <= item.score) {
-				level = item.name;
-			}
-		});
-
-		this.setState({
-			level
-		})
-
-		if (!this.props.showLevel) {
-			level = score + '分';
-		}
-
-		obserable.trigger({
-			type: "modifyShareInfo",
-			data: {
-				title: s.props.shareTitle.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level),
-				desc: s.props.shareDesc.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level)
-			}
-		});
-
-		//'您答对了'+this.state.rightAnswerCount+'道题，击败了'+(Math.random()*90|0 + 10)+'%的网友，获得"'+ this.state.level +'"称号',
-
-
-
-		//s.state.scale = scale;
-
-		this.setState({
-			rightAnswerCount
-		}, () => {
-			setTimeout(() => {
-				var scale = (Math.random() * 90 | 0) + 10;
-				var s = this;
-				if (s.state.rightAnswerCount === 100) {
-					scale = 99;
-
-				} else if (s.state.rightAnswerCount > 90) {
-
-					scale = (Math.random() * 8 | 0) + 90;
-
-				} else if (s.state.rightAnswerCount > 80) {
-
-					scale = (Math.random() * 10 | 0) + 80;
-
-				} else if (s.state.rightAnswerCount > 70) {
-
-					scale = (Math.random() * 20 | 0) + 60;
-
-				} else if (s.state.rightAnswerCount > 60) {
-
-					scale = (Math.random() * 20 | 0) + 40;
-
-				} else if (s.state.rightAnswerCount > 50) {
-
-					scale = (Math.random() * 20 | 0) + 20;
-
-				}else if (s.state.rightAnswerCount > 40) {
-
-					scale = (Math.random() * 20 | 0) + 10;
-
-				}else if (s.state.rightAnswerCount > 30) {
-
-					scale = (Math.random() * 10 | 0) + 10;
-
-				}else if (s.state.rightAnswerCount > 20) {
-
-					scale = (Math.random() * 10 | 0) + 0;
-
-				} else {
-					scale = (Math.random() * 5 | 0) + 3;
+			obserable.trigger({
+				type: "modifyShareInfo",
+				data: {
+					title: s.props.shareTitle.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level),
+					desc: s.props.shareDesc.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level)
 				}
-
-				var ss = scale;
-
-				s.state.scale = scale;
-				s.forceUpdate();
-				var title = window.share.title.replace(/{rightAnswerCount}/, s.state.rightAnswerCount).replace(/{scale}/, scale).replace(/{level}/, s.state.level);
-				if (s.state.rightAnswerCount === 0) {
-					title = '学习政府工作报告，尚需努力！';
-					s.state.scale = 0;
-					scale = 0;
-				}
-
-				s.props.wxConfig(
-					title,
-					window.share.desc,
-					s.props.shareImg,
-					s.props.appId,
-					s.props.worksid
-				)
-
-				return;
-
-
-			}, 10)
-		})
-
-
-
-		obserable.trigger({
-			type: 'clearCountdown'
-		})
-
-
-
-		setTimeout(() => {
-			this.setState({
-				submit: false,
-				hideList: true,
-				score,
-				showScore: true
 			});
-		}, 200);
+
+			//'您答对了'+this.state.rightAnswerCount+'道题，击败了'+(Math.random()*90|0 + 10)+'%的网友，获得"'+ this.state.level +'"称号',
+
+
+
+
+
+			//s.state.scale = scale;
+
+			this.setState({
+				rightAnswerCount
+			}, () => {
+				setTimeout(() => {
+					var scale = (Math.random() * 90 | 0) + 10;
+					var s = this;
+					if (s.state.rightAnswerCount === 100) {
+						scale = 99;
+
+					} else if (s.state.rightAnswerCount > 90) {
+
+						scale = (Math.random() * 8 | 0) + 90;
+
+					} else if (s.state.rightAnswerCount > 80) {
+
+						scale = (Math.random() * 10 | 0) + 80;
+
+					} else if (s.state.rightAnswerCount > 70) {
+
+						scale = (Math.random() * 20 | 0) + 60;
+
+					} else if (s.state.rightAnswerCount > 60) {
+
+						scale = (Math.random() * 20 | 0) + 40;
+
+					} else if (s.state.rightAnswerCount > 50) {
+
+						scale = (Math.random() * 20 | 0) + 20;
+
+					}else if (s.state.rightAnswerCount > 40) {
+
+						scale = (Math.random() * 20 | 0) + 10;
+
+					}else if (s.state.rightAnswerCount > 30) {
+
+						scale = (Math.random() * 10 | 0) + 10;
+
+					}else if (s.state.rightAnswerCount > 20) {
+
+						scale = (Math.random() * 10 | 0) + 0;
+
+					} else {
+						scale = (Math.random() * 5 | 0) + 3;
+					}
+
+					var ss = scale;
+
+					s.state.scale = scale;
+					s.forceUpdate();
+					var title = window.share.title.replace(/{rightAnswerCount}/, s.state.rightAnswerCount).replace(/{scale}/, scale).replace(/{level}/, s.state.level);
+					if (s.state.rightAnswerCount === 0) {
+						title = '学习政府工作报告，尚需努力！';
+						s.state.scale = 0;
+						scale = 0;
+					}
+
+					s.props.wxConfig(
+						title,
+						window.share.desc,
+						s.props.shareImg,
+						s.props.appId,
+						s.props.worksid
+					)
+
+					return;
+
+
+				}, 10)
+			})
+
+
+
+			obserable.trigger({
+				type: 'clearCountdown'
+			})
+
+
+
+			setTimeout(() => {
+				this.setState({
+					submit: false,
+					hideList: true,
+					score,
+					showScore: true
+				});
+			}, 200);
+		},200)
 
 		var s = this;
 

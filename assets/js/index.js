@@ -35758,12 +35758,16 @@
 						type: "nextGk"
 					});
 
-					if (this.props.gk === window.gkConfig.length - 1) {
-						obserable.trigger({
-							type: 'fillAnswer',
-							data: this.state.currentAnswer.concat([])
-						});
-					}
+					setTimeout(function () {
+
+						if (_this3.state.currentQid + 1 === window.gkConfig[_this3.props.gk - 1]) {
+
+							obserable.trigger({
+								type: 'fillAnswer',
+								data: _this3.state.currentAnswer.concat([])
+							});
+						}
+					}, 100);
 				} else {
 
 					obserable.trigger({
@@ -35774,133 +35778,136 @@
 					clearInterval(this.timer);
 				}
 
-				this.props.myAnswer.map(function (item, i) {
-					_this3.props.question[i].rightAnswer = [];
-
-					_this3.props.question[i].answer.map(function (a, k) {
-						if (a.isRight) {
-							_this3.props.question[i].rightAnswer.push(k);
-						} else {
-							_this3.props.question[i].rightAnswer.push(undefined);
-						}
-					});
-				});
-				var rightAnswerCount = 0;
-				this.props.question.map(function (item, i) {
-					if (_this3.props.questionType !== 'single') {
-						var isRight = 0;
-						_this3.props.question[i].rightAnswer.map(function (right, k) {
-							if (_this3.props.myAnswer[i][k] === right) {
-								isRight++;
-							}
-						});
-						if (isRight >= _this3.props.question[i].rightAnswer.length) {
-							score += _this3.props.question[i].score;
-						}
-					} else {
-
-						_this3.props.question[i].rightAnswer && _this3.props.question[i].rightAnswer.map(function (right, k) {
-							if (right === _this3.props.myAnswer[i][0] && _this3.props.myAnswer[i][0] !== undefined) {
-								score += _this3.props.question[i].score;
-								rightAnswerCount++;
-							}
-						});
-					}
-				});
-
-				score >= 100 && (score = 100);
-
-				var level = '';
-				this.props.level.map(function (item, i) {
-					if (score <= item.score) {
-						level = item.name;
-					}
-				});
-
-				this.setState({
-					level: level
-				});
-
-				if (!this.props.showLevel) {
-					level = score + '分';
-				}
-
-				obserable.trigger({
-					type: "modifyShareInfo",
-					data: {
-						title: s.props.shareTitle.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level),
-						desc: s.props.shareDesc.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level)
-					}
-				});
-
-				//'您答对了'+this.state.rightAnswerCount+'道题，击败了'+(Math.random()*90|0 + 10)+'%的网友，获得"'+ this.state.level +'"称号',
-
-				//s.state.scale = scale;
-
-				this.setState({
-					rightAnswerCount: rightAnswerCount
-				}, function () {
-					setTimeout(function () {
-						var scale = (Math.random() * 90 | 0) + 10;
-						var s = _this3;
-						if (s.state.rightAnswerCount === 100) {
-							scale = 99;
-						} else if (s.state.rightAnswerCount > 90) {
-
-							scale = (Math.random() * 8 | 0) + 90;
-						} else if (s.state.rightAnswerCount > 80) {
-
-							scale = (Math.random() * 10 | 0) + 80;
-						} else if (s.state.rightAnswerCount > 70) {
-
-							scale = (Math.random() * 20 | 0) + 60;
-						} else if (s.state.rightAnswerCount > 60) {
-
-							scale = (Math.random() * 20 | 0) + 40;
-						} else if (s.state.rightAnswerCount > 50) {
-
-							scale = (Math.random() * 20 | 0) + 20;
-						} else if (s.state.rightAnswerCount > 40) {
-
-							scale = (Math.random() * 20 | 0) + 10;
-						} else if (s.state.rightAnswerCount > 30) {
-
-							scale = (Math.random() * 10 | 0) + 10;
-						} else if (s.state.rightAnswerCount > 20) {
-
-							scale = (Math.random() * 10 | 0) + 0;
-						} else {
-							scale = (Math.random() * 5 | 0) + 3;
-						}
-
-						var ss = scale;
-
-						s.state.scale = scale;
-						s.forceUpdate();
-						var title = window.share.title.replace(/{rightAnswerCount}/, s.state.rightAnswerCount).replace(/{scale}/, scale).replace(/{level}/, s.state.level);
-						if (s.state.rightAnswerCount === 0) {
-							title = '学习政府工作报告，尚需努力！';
-							s.state.scale = 0;
-							scale = 0;
-						}
-
-						s.props.wxConfig(title, window.share.desc, s.props.shareImg, s.props.appId, s.props.worksid);
-
-						return;
-					}, 10);
-				});
-
-				obserable.trigger({
-					type: 'clearCountdown'
-				});
-
 				setTimeout(function () {
-					_this3.setState({
-						submit: false,
-						hideList: true,
-						score: score,
-						showScore: true
+					_this3.props.myAnswer.map(function (item, i) {
+						_this3.props.question[i].rightAnswer = [];
+
+						_this3.props.question[i].answer.map(function (a, k) {
+							if (a.isRight) {
+								_this3.props.question[i].rightAnswer.push(k);
+							} else {
+								_this3.props.question[i].rightAnswer.push(undefined);
+							}
+						});
 					});
+					var rightAnswerCount = 0;
+					_this3.props.question.map(function (item, i) {
+						if (_this3.props.questionType !== 'single') {
+							var isRight = 0;
+							_this3.props.question[i].rightAnswer.map(function (right, k) {
+								if (_this3.props.myAnswer[i][k] === right) {
+									isRight++;
+								}
+							});
+							if (isRight >= _this3.props.question[i].rightAnswer.length) {
+								score += _this3.props.question[i].score;
+							}
+						} else {
+
+							_this3.props.question[i].rightAnswer && _this3.props.question[i].rightAnswer.map(function (right, k) {
+
+								if (right === _this3.props.myAnswer[i][0] && _this3.props.myAnswer[i][0] !== undefined) {
+									score += _this3.props.question[i].score;
+									rightAnswerCount++;
+								}
+							});
+						}
+					});
+
+					score >= 100 && (score = 100);
+
+					var level = '';
+					_this3.props.level.map(function (item, i) {
+						if (score <= item.score) {
+							level = item.name;
+						}
+					});
+
+					_this3.setState({
+						level: level
+					});
+
+					if (!_this3.props.showLevel) {
+						level = score + '分';
+					}
+
+					obserable.trigger({
+						type: "modifyShareInfo",
+						data: {
+							title: s.props.shareTitle.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level),
+							desc: s.props.shareDesc.replace(/{username}/, s.state.username || s.props.nickname).replace(/{score}/ig, score).replace(/{level}/ig, level)
+						}
+					});
+
+					//'您答对了'+this.state.rightAnswerCount+'道题，击败了'+(Math.random()*90|0 + 10)+'%的网友，获得"'+ this.state.level +'"称号',
+
+					//s.state.scale = scale;
+
+					_this3.setState({
+						rightAnswerCount: rightAnswerCount
+					}, function () {
+						setTimeout(function () {
+							var scale = (Math.random() * 90 | 0) + 10;
+							var s = _this3;
+							if (s.state.rightAnswerCount === 100) {
+								scale = 99;
+							} else if (s.state.rightAnswerCount > 90) {
+
+								scale = (Math.random() * 8 | 0) + 90;
+							} else if (s.state.rightAnswerCount > 80) {
+
+								scale = (Math.random() * 10 | 0) + 80;
+							} else if (s.state.rightAnswerCount > 70) {
+
+								scale = (Math.random() * 20 | 0) + 60;
+							} else if (s.state.rightAnswerCount > 60) {
+
+								scale = (Math.random() * 20 | 0) + 40;
+							} else if (s.state.rightAnswerCount > 50) {
+
+								scale = (Math.random() * 20 | 0) + 20;
+							} else if (s.state.rightAnswerCount > 40) {
+
+								scale = (Math.random() * 20 | 0) + 10;
+							} else if (s.state.rightAnswerCount > 30) {
+
+								scale = (Math.random() * 10 | 0) + 10;
+							} else if (s.state.rightAnswerCount > 20) {
+
+								scale = (Math.random() * 10 | 0) + 0;
+							} else {
+								scale = (Math.random() * 5 | 0) + 3;
+							}
+
+							var ss = scale;
+
+							s.state.scale = scale;
+							s.forceUpdate();
+							var title = window.share.title.replace(/{rightAnswerCount}/, s.state.rightAnswerCount).replace(/{scale}/, scale).replace(/{level}/, s.state.level);
+							if (s.state.rightAnswerCount === 0) {
+								title = '学习政府工作报告，尚需努力！';
+								s.state.scale = 0;
+								scale = 0;
+							}
+
+							s.props.wxConfig(title, window.share.desc, s.props.shareImg, s.props.appId, s.props.worksid);
+
+							return;
+						}, 10);
+					});
+
+					obserable.trigger({
+						type: 'clearCountdown'
+					});
+
+					setTimeout(function () {
+						_this3.setState({
+							submit: false,
+							hideList: true,
+							score: score,
+							showScore: true
+						});
+					}, 200);
 				}, 200);
 
 				var s = this;

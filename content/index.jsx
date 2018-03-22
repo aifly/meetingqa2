@@ -32,6 +32,7 @@ class ZmitiContentApp extends Component {
 		this.viewW = document.documentElement.clientWidth;
 		this.viewH = document.documentElement.clientHeight;
 		this.rightAnswerCount = 0;
+		
 		window.s = this;
 
 

@@ -440,9 +440,11 @@ export class App extends Component {
 				});
 			});
 
-			obserable.on('nextGk',()=>{
+			obserable.on('nextGk',(fn)=>{
 				this.setState({
 					gk:this.state.gk+1
+				},()=>{
+					fn && fn()
 				})
 				
 			})
